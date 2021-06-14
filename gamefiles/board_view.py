@@ -4,7 +4,8 @@ import copy
 
 def print_row(board,row):
     print(f'{board[row][0]}|{board[row][1]}|{board[row][2]}'.center(shutil.get_terminal_size().columns))
-    print('-----|-----|-----'.center(shutil.get_terminal_size().columns))
+    if not row == 2:
+        print('-----|-----|-----'.center(shutil.get_terminal_size().columns))
 
 def display_board(board,initial):
     if initial:
@@ -19,6 +20,7 @@ def display_board(board,initial):
                     newboard[i][j] = '  O  '
                 else:
                     newboard[i][j] = '     '
+
 
     for i in range(3):
         print_row(newboard,i)

@@ -1,3 +1,3 @@
-from maingame import MainGame
+from gamefiles import maingame
 
-MainGame()
+maingame.MainGame()

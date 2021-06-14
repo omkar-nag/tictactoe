@@ -1,4 +1,4 @@
-from source import player,actions,result,terminal,utility
+from .source import player,actions,result,terminal,utility
 
 X = "X"
 O = "O"
